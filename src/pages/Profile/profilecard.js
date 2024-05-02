@@ -35,7 +35,7 @@ const ProfileCard = () => {
     const fetchData = async () => {
       try {
         const url =
-          "https://musicer-backend-3zjg.onrender.com/Signup-Login/data";
+          "https://musicer-backend.onrender.com/Signup-Login/data";
         const response = await axios.post(url, obj);
         setData(response.data);
         setName(response.data.name);
@@ -95,7 +95,7 @@ const ProfileCard = () => {
         };
         // const url = "http://localhost:5000/Signup-Login/update";
         const url =
-          "https://musicer-backend-3zjg.onrender.com/Signup-Login/update";
+          "https://musicer-backend.onrender.com/Signup-Login/update";
 
         try {
           const response = await axios.post(url, updatedData);
@@ -143,10 +143,10 @@ const ProfileCard = () => {
       const obj1 = { username };
       // const url = `http://localhost:5000/Signup-Login/delete`;
       const url =
-        "https://musicer-backend-3zjg.onrender.com/Signup-Login/delete";
+        "https://musicer-backend.onrender.com/Signup-Login/delete";
 
       // const url1 = "http://localhost:5000/Fav/deleteAll";
-      const url1 = "https://musicer-backend-3zjg.onrender.com/Fav/deleteAll";
+      const url1 = "https://musicer-backend.onrender.com/Fav/deleteAll";
 
       axios
         .delete(url, {
