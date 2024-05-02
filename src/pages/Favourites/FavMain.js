@@ -27,7 +27,7 @@ const FavMain = () => {
 
   useEffect(() => {
     axios
-      .get(`https://musicer-backend-3zjg.onrender.com/Fav?username=${username}`)
+      .get(`https://musicer-backend.onrender.com/Fav?username=${username}`)
       .then((result) => setUsers(result.data))
       .catch((err) => console.error(err))
       .finally(() => {
@@ -97,7 +97,7 @@ const FavMain = () => {
       setLoading(true);
 
       const obj = { username, id };
-      const url = "https://musicer-backend-3zjg.onrender.com/Fav/delete";
+      const url = "https://musicer-backend.onrender.com/Fav/delete";
       await axios.delete(url, {
         data: {
           username: username,
