@@ -34,7 +34,7 @@ const Login = () => {
 
   const handleClick = (e) => {
     setLoading(true);
-    const url = "https://musicer-backend-3zjg.onrender.com/Signup-Login/login";
+    const url = "https://musicer-backend.onrender.com/Signup-Login/login";
     // const url = "http://localhost:5000/Signup-Login/login";
     axios
       .post(url, data)
