@@ -71,7 +71,7 @@ const MusicPlayer = () => {
         id: id,
         type: "track",
       };
-      const url = "https://musicer-backend-3zjg.onrender.com/Fav/create";
+      const url = "https://musicer-backend.onrender.com/Fav/create";
       await axios.post(url, data);
 
       // If the request is successful, show an alert
